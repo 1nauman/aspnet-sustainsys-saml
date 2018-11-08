@@ -3,6 +3,7 @@ using System.Web.Mvc;
 
 namespace aspnet_sustainsys_saml.Controllers
 {
+    [Authorize]
     public class HomeController : Controller
     {
         public ActionResult Index()
@@ -10,7 +11,6 @@ namespace aspnet_sustainsys_saml.Controllers
             return View();
         }
 
-        [Authorize]
         public ActionResult Secure()
         {
             var identity = System.Web.HttpContext.Current.User.Identity as ClaimsIdentity;
