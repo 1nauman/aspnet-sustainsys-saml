@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2050
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aspnet-sustainsys-saml", "src\aspnet-mvc-sample\aspnet-sustainsys-saml.csproj", "{31D7F847-CA70-4E6C-A659-97348D5D5FA2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "first-web-app", "src\first-web-app\first-web-app.csproj", "{31D7F847-CA70-4E6C-A659-97348D5D5FA2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{086D6EAA-39D3-4009-8D8F-3DB3FF6481F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "second-web-app", "src\second-web-app\second-web-app.csproj", "{EAF7845D-7EE3-445A-B3C6-CF9D05D7201A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +19,17 @@ Global
 		{31D7F847-CA70-4E6C-A659-97348D5D5FA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{31D7F847-CA70-4E6C-A659-97348D5D5FA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{31D7F847-CA70-4E6C-A659-97348D5D5FA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAF7845D-7EE3-445A-B3C6-CF9D05D7201A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAF7845D-7EE3-445A-B3C6-CF9D05D7201A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAF7845D-7EE3-445A-B3C6-CF9D05D7201A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAF7845D-7EE3-445A-B3C6-CF9D05D7201A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{31D7F847-CA70-4E6C-A659-97348D5D5FA2} = {086D6EAA-39D3-4009-8D8F-3DB3FF6481F7}
+		{EAF7845D-7EE3-445A-B3C6-CF9D05D7201A} = {086D6EAA-39D3-4009-8D8F-3DB3FF6481F7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8ABFA879-3196-429A-95DA-7CE63C77DE84}
